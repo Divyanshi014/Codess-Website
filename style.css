@@ -173,6 +173,7 @@ body {
 /* button section ends */
 .mentors-section {
   padding: 2rem;
+  padding-left: 3rem;
   background: var(--primary-gradient-purple);
   /* color: dimgray; */
   color: rgb(255, 255, 255);
@@ -630,8 +631,7 @@ body {
 }
 @media screen and (max-width: 575px) {
   .circle {
-    width: 75px;
-    height: 75px;
+    border: 6px solid white;
   }
 
   .udemy-perk-logo {
@@ -691,26 +691,31 @@ body {
 .social ul li:hover {
   transform: translate(110px, 0);
   background: #c44a73;
-  transition: all 1.5s;
+  text-decoration: none;
+}
+.social ul li a{
+  margin: 0px 2px 5px 2px;
   text-decoration: none;
   color: #f9c5d1;
+  transition: color 1.5s;
 }
 
 .social ul li:hover a {
   color: white;
-  margin: 0px 2px 5px 2px;
-  text-decoration: none;
-  color: #f9c5d1;
 }
+
 .social_icons {
   color: #f9c5d1;
+}
+
+.social ul li i {
+  transition: all 1.5s;
 }
 
 .social ul li:hover i {
   color: #c44a73;
   background: white;
   transform: rotate(360deg);
-  transition: all 1.5s;
 }
 
 .social ul li .social_icons {
@@ -801,6 +806,7 @@ img.logo {
   font-family: Nunito, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 20px;
 }
 .nav-item {
   padding: 10px 10px;
